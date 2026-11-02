@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library - College Finder</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f8ff;
+            color: #17385f;
+        }
+
+        /* HEADER */
+        header {
+            background-color: #17385f;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 15px 6%;
+        }
+
+        .logo {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+            margin-right: 12px;
+        }
+
+        .brand {
+            border-right: 1px solid #68809c;
+            padding-right: 30px;
+        }
+
+        .brand h1 {
+            font-size: 28px;
+        }
+
+        .brand h1 span {
+            color: #ffc928;
+        }
+
+        .brand p {
+            font-size: 13px;
+            margin-top: 5px;
+        }
+
+        /* NAVIGATION */
+        nav {
+            margin-left: auto;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            margin-left: 22px;
+        }
+
+        nav a:hover {
+            color: #ffc928;
+        }
+
+        /* CONTENT */
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: 45px auto;
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .title h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .title p {
+            font-size: 17px;
+        }
+
+        .library-box {
+            background-color: white;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.10);
+        }
+
+        .library-icon {
+            text-align: center;
+            font-size: 60px;
+            margin-bottom: 15px;
+        }
+
+        .library-box h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .library-box p {
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .library-list {
+            margin-left: 25px;
+            line-height: 2;
+            margin-bottom: 20px;
+        }
+
+        /* BACK BUTTON */
+        .back-btn {
+            display: inline-block;
+            margin-top: 25px;
+            background-color: #1676d2;
+            color: white;
+            text-decoration: none;
+            padding: 12px 22px;
+            border-radius: 7px;
+            font-weight: bold;
+        }
+
+        .back-btn:hover {
+            background-color: #0d5eac;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #17385f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        /* RESPONSIVE */
+        @media(max-width:900px) {
+
+            header {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .brand {
+                border-right: none;
+            }
+
+            nav {
+                width: 100%;
+                text-align: center;
+                margin-top: 18px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 7px;
+            }
+        }
+
+        @media(max-width:600px) {
+
+            nav a {
+                display: block;
+            }
+
+            .title h2 {
+                font-size: 30px;
+            }
+
+            .library-box {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+    <img src="logo.jpeg" class="logo" alt="College Finder Logo">
+
+    <div class="brand">
+        <h1>College <span>Finder</span></h1>
+        <p>Find Your Perfect College</p>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="colleges.html">Colleges</a>
+        <a href="courses.html">Courses</a>
+        <a href="admission.html">Admission</a>
+        <a href="compare.html">Compare</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+</header>
+
+
+<!-- MAIN CONTENT -->
+
+<div class="container">
+
+    <div class="title">
+        <h2>College Library</h2>
+        <p>Library facilities and information</p>
+    </div>
+
+    <div class="library-box">
+
+        <div class="library-icon">📚</div>       
+        <h3>Library Information</h3>
+
+        <p>
+            The college library provides students with useful
+            study materials and resources. It supports students
+            in their academic learning and research activities.
+        </p>
+
+
+        <h3>Library Facilities</h3>
+
+        <ul class="library-list">
+            <li>Large collection of textbooks</li>
+            <li>Reference books</li>
+            <li>Academic journals</li>
+            <li>Newspapers and magazines</li>
+            <li>Reading area</li>
+            <li>Computer and internet facilities</li>
+        </ul>
+
+
+        <h3>Benefits for Students</h3>
+
+        <p>
+            Students can use the library to prepare for examinations,
+            complete assignments, improve their knowledge and access
+            additional learning resources.
+        </p>
+
+
+        <a href="colleges.html" class="back-btn">
+            ← Back to Colleges
+        </a>
+
+    </div>
+
+</div>
+
+
+<!-- FOOTER -->
+
+<footer>
+    <p>© 2026 College Finder | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
