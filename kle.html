@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KLE Technological University - College Finder</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f8ff;
+            color: #17385f;
+        }
+
+        /* Header */
+        header {
+            background-color: #17385f;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 18px 6%;
+        }
+
+        .logo {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+            margin-right: 12px;
+        }
+
+        .brand {
+            border-right: 1px solid #68809c;
+            padding-right: 30px;
+        }
+
+        .brand h1 {
+            font-size: 28px;
+        }
+
+        .brand h1 span {
+            color: #ffc928;
+        }
+
+        .brand p {
+            font-size: 13px;
+            margin-top: 5px;
+        }
+
+        /* Navigation */
+        nav {
+            margin-left: auto;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: #ffc928;
+        }
+
+        /* Main */
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 40px auto;
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .title h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .title p {
+            font-size: 17px;
+        }
+
+        /* College Image */
+        .college-image {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            margin-bottom: 30px;
+        }
+
+        /* Details */
+        .details {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.10);
+        }
+
+        .details h3 {
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+
+        .details p {
+            font-size: 16px;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        /* Information Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            border: 1px solid #d5dfe9;
+            padding: 14px;
+            text-align: left;
+        }
+
+        th {
+            width: 30%;
+            background-color: #17385f;
+            color: white;
+        }
+
+        td {
+            background-color: #f8fbff;
+        }
+
+        /* Facilities */
+        .facilities {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .facility {
+            background-color: #e4f2ff;
+            padding: 12px 18px;
+            border-radius: 7px;
+            font-weight: bold;
+        }
+
+        /* Button */
+        .apply-btn {
+            display: inline-block;
+            margin-top: 25px;
+            background-color: #1676d2;
+            color: white;
+            text-decoration: none;
+            padding: 13px 25px;
+            border-radius: 7px;
+            font-weight: bold;
+        }
+
+        .apply-btn:hover {
+            background-color: #0d5eac;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 25px;
+            margin-left: 10px;
+            background-color: #17385f;
+            color: white;
+            text-decoration: none;
+            padding: 13px 25px;
+            border-radius: 7px;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #17385f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        /* Mobile */
+        @media (max-width: 900px) {
+
+            header {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .brand {
+                border-right: none;
+            }
+
+            nav {
+                width: 100%;
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            nav a {
+                display: block;
+                margin: 10px;
+            }
+
+            .college-image {
+                height: 220px;
+            }
+
+            .title h2 {
+                font-size: 28px;
+            }
+
+            .details {
+                padding: 20px;
+            }
+
+            .back-btn {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <img src="logo.jpeg" alt="College Finder Logo" class="logo">
+
+        <div class="brand">
+            <h1>College <span>Finder</span></h1>
+            <p>Find Your Perfect College</p>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="colleges.html">Colleges</a>
+            <a href="courses.html">Courses</a>
+            <a href="admission.html">Admission</a>
+            <a href="compare.html">Compare</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- College Details -->
+    <div class="container">
+
+        <div class="title">
+            <h2>KLE Technological University</h2>
+            <p>College Details</p>
+        </div>
+
+
+        <!-- College Photo -->
+        <img src="kle.jpeg"
+             alt="KLE Technological University"
+             class="college-image">
+
+
+        <div class="details">
+
+            <h3>About the College</h3>
+
+            <p>
+                KLE Technological University is a higher education institution
+                located in Hubballi, Karnataka. It provides undergraduate and
+                postgraduate education in different fields.
+            </p>
+
+
+            <h3>College Information</h3>
+
+            <table>
+
+                <tr>
+                    <th>College Name</th>
+                    <td>KLE Technological University</td>
+                </tr>
+
+                <tr>
+                    <th>Location</th>
+                    <td>Hubballi, Karnataka</td>
+                </tr>
+
+                <tr>
+                    <th>Course</th>
+                    <td>BCA,BBA,B.COM,B.SC</td>
+                </tr>
+
+                <tr>
+                    <th>Type</th>
+                    <td>University</td>
+                </tr>
+
+                <tr>
+                    <th>Study Mode</th>
+                    <td>Regular</td>
+                </tr>
+
+            </table>
+
+
+            <h3>Facilities</h3>
+
+            <div class="facilities">
+
+ 			   <a href="library.html" class="facility">
+      				  📚 Library
+   			   </a>
+
+   			   <a href="computerlab.html" class="facility">
+                            💻 Computer Lab
+                           </a>
+
+                           <a href="classrooms.html" class="facility">
+                             🏫 Classrooms
+                           </a>
+
+                          <a href="hostel.html" class="facility">
+                            🏠 Hostel
+                          </a>
+
+                         <a href="sports.html" class="facility">
+                              ⚽ Sports
+                         </a>
+
+                       <a href="internet.html" class="facility">
+                              📶 Internet
+                       </a>
+
+                      </div>	
+
+
+            <a href="admission.html" class="apply-btn">
+                Apply Now
+            </a>
+
+            <a href="colleges.html" class="back-btn">
+                ← Back to Colleges
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 College Finder | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

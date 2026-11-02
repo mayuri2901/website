@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact - College Finder</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f8ff;
+            color: #17385f;
+        }
+
+        /* Header */
+        header {
+            background-color: #17385f;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 18px 6%;
+        }
+
+        .logo {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+            margin-right: 12px;
+        }
+
+        .brand {
+            border-right: 1px solid #68809c;
+            padding-right: 30px;
+        }
+
+        .brand h1 {
+            font-size: 28px;
+        }
+
+        .brand h1 span {
+            color: #ffc928;
+        }
+
+        .brand p {
+            font-size: 13px;
+            margin-top: 5px;
+        }
+
+        /* Navigation */
+        nav {
+            margin-left: auto;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: #ffc928;
+        }
+
+        /* Contact Section */
+        .container {
+            width: 90%;
+            margin: 45px auto;
+            text-align: center;
+        }
+
+        .container h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .container > p {
+            font-size: 17px;
+            margin-bottom: 35px;
+        }
+
+        .contact-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        /* Contact Information */
+        .contact-info,
+        .contact-form {
+            background-color: white;
+            width: 45%;
+            min-width: 300px;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.10);
+        }
+
+        .contact-info h3,
+        .contact-form h3 {
+            font-size: 24px;
+            margin-bottom: 25px;
+        }
+
+        .info-box {
+            padding: 15px;
+            margin-bottom: 15px;
+            background-color: #f1f8ff;
+            border-radius: 8px;
+            text-align: left;
+        }
+
+        .info-box strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* Form */
+        .contact-form {
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 7px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 18px;
+            border: 1px solid #ccd6e0;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        textarea {
+            height: 120px;
+            resize: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 13px;
+            background-color: #1676d2;
+            color: white;
+            border: none;
+            border-radius: 7px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0d5eac;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #17385f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+
+            header {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .brand {
+                border-right: none;
+            }
+
+            nav {
+                width: 100%;
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            .contact-info,
+            .contact-form {
+                width: 90%;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            nav a {
+                display: block;
+                margin: 10px;
+            }
+
+            .container h2 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <img src="logo.jpeg" alt="College Finder Logo" class="logo">
+
+        <div class="brand">
+            <h1>College <span>Finder</span></h1>
+            <p>Find Your Perfect College</p>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="colleges.html">Colleges</a>
+            <a href="courses.html">Courses</a>
+            <a href="admission.html">Admission</a>
+            <a href="compare.html">Compare</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Contact Section -->
+    <div class="container">
+
+        <h2>Contact Us</h2>
+
+        <p>
+            Have any questions? Get in touch with College Finder.
+        </p>
+
+        <div class="contact-container">
+
+            <!-- Contact Information -->
+            <div class="contact-info">
+
+                <h3>Contact Information</h3>
+
+                <div class="info-box">
+                    <strong>📍 Address</strong>
+                    College Finder Office, Karnataka
+                </div>
+
+                <div class="info-box">
+                    <strong>📞 Phone</strong>
+                    +91 98765 43210
+                </div>
+
+                <div class="info-box">
+                    <strong>✉ Email</strong>
+                    collegefinder@example.com
+                </div>
+
+                <div class="info-box">
+                    <strong>🕐 Working Hours</strong>
+                    Monday - Friday, 9:00 AM - 5:00 PM
+                </div>
+
+            </div>
+
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+
+                <h3>Send Us a Message</h3>
+
+                <form>
+
+                    <label>Name</label>
+                    <input type="text" placeholder="Enter your name">
+
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter your email">
+
+                    <label>Message</label>
+                    <textarea placeholder="Enter your message"></textarea>
+
+                    <button type="submit">
+                        Send Message
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 College Finder | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
