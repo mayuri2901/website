@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admission - College Finder</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f8ff;
+            color: #17385f;
+        }
+
+        /* HEADER */
+        header {
+            background-color: #17385f;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 18px 6%;
+        }
+
+        .logo {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+            margin-right: 12px;
+        }
+
+        .brand h1 {
+            font-size: 28px;
+        }
+
+        .brand h1 span {
+            color: #ffc928;
+        }
+
+        .brand p {
+            font-size: 13px;
+            margin-top: 5px;
+        }
+
+        /* NAVIGATION */
+        nav {
+            margin-left: auto;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: bold;
+        }
+
+        nav a:hover,
+        {
+            color: #ffc928;
+        }
+
+        /* ADMISSION */
+        .container {
+            width: 90%;
+            max-width: 700px;
+            margin: 40px auto;
+        }
+
+        .container h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .container > p {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .form-box {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 7px;
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccd6e0;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        textarea {
+            height: 100px;
+            resize: none;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 25px;
+            padding: 13px;
+            background-color: #1676d2;
+            color: white;
+            border: none;
+            border-radius: 7px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0d5eac;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #17385f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* MOBILE */
+        @media (max-width: 700px) {
+
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .logo {
+                margin-right: 0;
+                margin-bottom: 8px;
+            }
+
+            nav {
+                margin-top: 15px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 7px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <img src="logo.jpeg" alt="College Finder Logo" class="logo">
+
+        <div class="brand">
+            <h1>College <span>Finder</span></h1>
+            <p>Find Your Perfect College</p>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="colleges.html">Colleges</a>
+            <a href="courses.html">Courses</a>
+            <a href="admission.html">Admission</a>
+            <a href="compare.html">Compare</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- ADMISSION FORM -->
+    <div class="container">
+
+        <h2>Admission Form</h2>
+
+        <p>Fill in the details to send your admission enquiry.</p>
+
+        <div class="form-box">
+
+            <form>
+
+                <label>Student Name</label>
+                <input type="text" placeholder="Enter your name">
+
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email">
+
+                <label>Phone Number</label>
+                <input type="tel" placeholder="Enter phone number">
+
+                <label>Select College</label>
+                <select>
+                    <option>Select College</option>
+                    <option>KLE Technological University</option>
+                    <option>Karnatak University</option>
+                    <option>Christ University</option>
+                    <option>University of mysore</option>
+                </select>
+
+                <label>Select Course</label>
+                <select>
+                    <option>Select Course</option>
+                    <option>BCA</option>
+                    <option>BBA</option>
+                    <option>B.Com</option>
+                    <option>B.Sc</option>
+                </select>
+
+                <label>Address</label>
+                <textarea placeholder="Enter your address"></textarea>
+
+                <button type="submit">Submit Application</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 College Finder | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

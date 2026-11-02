@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Compare Colleges - College Finder</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f8ff;
+            color: #17385f;
+        }
+
+        /* HEADER */
+        header {
+            background-color: #17385f;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 18px 6%;
+        }
+
+        .logo {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+            margin-right: 12px;
+        }
+
+        .brand {
+            border-right: 1px solid #68809c;
+            padding-right: 30px;
+        }
+
+        .brand h1 {
+            font-size: 28px;
+        }
+
+        .brand h1 span {
+            color: #ffc928;
+        }
+
+        .brand p {
+            font-size: 13px;
+            margin-top: 5px;
+        }
+
+        nav {
+            margin-left: auto;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: #ffc928;
+        }
+
+        /* MAIN */
+        .container {
+            width: 90%;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .container h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .container > p {
+            font-size: 17px;
+            margin-bottom: 30px;
+        }
+
+        /* TABLE */
+        .table-box {
+            overflow-x: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.10);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 750px;
+        }
+
+        th, td {
+            border: 1px solid #d5dfe9;
+            padding: 15px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #17385f;
+            color: white;
+        }
+
+        td {
+            background-color: #f8fbff;
+        }
+
+        tr:hover td {
+            background-color: #eaf5ff;
+        }
+
+        /* BUTTON */
+        .admission-btn {
+            display: inline-block;
+            margin-top: 30px;
+            background-color: #1676d2;
+            color: white;
+            text-decoration: none;
+            padding: 13px 25px;
+            border-radius: 7px;
+            font-weight: bold;
+        }
+
+        .admission-btn:hover {
+            background-color: #0d5eac;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #17385f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 900px) {
+
+            header {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .brand {
+                border-right: none;
+            }
+
+            nav {
+                width: 100%;
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            nav a {
+                display: block;
+                margin: 10px;
+            }
+
+            .container h2 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+
+    <img src="logo.jpeg" alt="College Finder Logo" class="logo">
+
+    <div class="brand">
+        <h1>College <span>Finder</span></h1>
+        <p>Find Your Perfect College</p>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="colleges.html">Colleges</a>
+        <a href="courses.html">Courses</a>
+        <a href="admission.html">Admission</a>
+        <a href="compare.html">Compare</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+</header>
+
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+    <h2>Compare Colleges</h2>
+
+    <p>
+        Compare different colleges and choose the one that suits you best.
+    </p>
+
+    <div class="table-box">
+
+        <table>
+
+            <tr>
+                <th>Details</th>
+                <th>KLE Technological University</th>
+                <th>Karnatak University</th>
+                <th>Christ University</th>
+                <th>University of Mysore</th>
+            </tr>
+
+            <tr>
+                <th>Location</th>
+                <td>Hubballi</td>
+                <td>Dharwad</td>
+                <td>Bengaluru</td>
+                <td>Mysuru</td>
+            </tr>
+
+            <tr>
+                <th>Type</th>
+                <td>University</td>
+                <td>University</td>
+                <td>Deemed University</td>
+                <td>University</td>
+            </tr>
+
+            <tr>
+                <th>Study Mode</th>
+                <td>Regular</td>
+                <td>Regular</td>
+                <td>Regular</td>
+                <td>Regular</td>
+            </tr>
+
+            <tr>
+                <th>Library</th>
+                <td>Available</td>
+                <td>Available</td>
+                <td>Available</td>
+                <td>Available</td>
+            </tr>
+
+            <tr>
+                <th>Computer Lab</th>
+                <td>Available</td>
+                <td>Available</td>
+                <td>Available</td>
+                <td>Available</td>
+            </tr>
+
+            <tr>
+                <th>Hostel</th>
+                <td>Available</td>
+                <td>Available</td>
+                <td>Available</td>
+                <td>Available</td>
+            </tr>
+
+            <tr>
+                <th>Sports</th>
+                <td>Available</td>
+                <td>Available</td>
+                <td>Available</td>
+                <td>Available</td>
+            </tr>
+
+            <tr>
+                <th>Admission</th>
+                <td>Available</td>
+                <td>Available</td>
+                <td>Available</td>
+                <td>Available</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <a href="admission.html" class="admission-btn">
+        Go to Admission
+    </a>
+
+</div>
+
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 College Finder | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,378 @@
+s<!DOCTYPE html>
+<html>
+<head>
+    <title>Colleges - College Finder</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f8ff;
+            color: #17385f;
+        }
+
+        /* Header */
+        header {
+            background-color: #17385f;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 18px 6%;
+        }
+
+        .logo {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+            margin-right: 12px;
+        }
+
+        .brand {
+            border-right: 1px solid #68809c;
+            padding-right: 30px;
+        }
+
+        .brand h1 {
+            font-size: 28px;
+        }
+
+        .brand h1 span {
+            color: #ffc928;
+        }
+
+        .brand p {
+            font-size: 13px;
+            margin-top: 5px;
+        }
+
+        /* Navigation */
+        nav {
+            margin-left: auto;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: #ffc928;
+        }
+
+        /* Main */
+        .container {
+            width: 90%;
+            margin: 45px auto;
+            text-align: center;
+        }
+
+        .container h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .container > p {
+            font-size: 17px;
+            margin-bottom: 30px;
+        }
+
+        /* Search */
+        .search-box {
+            margin-bottom: 35px;
+        }
+
+        .search-box input {
+            width: 50%;
+            padding: 14px;
+            border: 1px solid #ccd6e0;
+            border-radius: 7px;
+            font-size: 16px;
+        }
+
+        /* College Cards */
+        .college-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .college-card {
+            background-color: white;
+            width: 300px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.10);
+            border: 1px solid #e0e8f0;
+        }
+
+        .college-icon {
+            width: 75px;
+            height: 75px;
+            margin: 0 auto 18px;
+            background-color: #e4f2ff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 35px;
+        }
+
+        .college-card h3 {
+            font-size: 21px;
+            margin-bottom: 15px;
+        }
+
+        .college-card p {
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+
+        /* View Details */
+        .details-btn {
+            display: inline-block;
+            margin-top: 15px;
+            background-color: #1676d2;
+            color: white;
+            text-decoration: none;
+            padding: 11px 20px;
+            border-radius: 7px;
+            font-weight: bold;
+        }
+
+        .details-btn:hover {
+            background-color: #0d5eac;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #17385f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+
+            header {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .brand {
+                border-right: none;
+            }
+
+            nav {
+                width: 100%;
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            .search-box input {
+                width: 80%;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            nav a {
+                display: block;
+                margin: 10px;
+            }
+
+            .search-box input {
+                width: 100%;
+            }
+
+            .college-card {
+                width: 100%;
+            }
+
+            .container h2 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <img src="logo.jpeg" alt="College Finder Logo" class="logo">
+
+        <div class="brand">
+            <h1>College <span>Finder</span></h1>
+            <p>Find Your Perfect College</p>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="colleges.html">Colleges</a>
+            <a href="courses.html">Courses</a>
+            <a href="admission.html">Admission</a>
+            <a href="compare.html">Compare</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Main -->
+    <div class="container">
+
+        <h2>Explore Colleges</h2>
+
+        <p>
+            Find information about different colleges and their courses.
+        </p>
+
+
+        <!-- Search -->
+        <div class="search-box">
+
+            <input type="text"
+                   id="search"
+                   placeholder="Search college..."
+                   onkeyup="searchCollege()">
+
+        </div>
+
+
+        <!-- College Cards -->
+        <div class="college-container" id="collegeList">
+
+
+            <!-- KLE Technological University -->
+            <div class="college-card">
+
+                <div class="college-icon">🏫</div>
+
+                <h3>KLE Technological University</h3>
+
+                <p>
+                    <b>Location:</b> Hubballi
+                </p>
+
+                 <a href="kle.html" class="details-btn">
+                    View Details
+                </a>
+
+            </div>
+
+
+            <!-- Karnatak University -->
+            <div class="college-card">
+
+                <div class="college-icon">🏛️</div>
+
+                <h3>Karnatak University</h3>
+
+                <p>
+                    <b>Location:</b> Dharwad
+                </p>
+
+                <a href="ku.html" class="details-btn">
+                    View Details
+                </a>
+
+            </div>
+
+
+            <!-- Christ University -->
+            <div class="college-card">
+
+                <div class="college-icon">🎓</div>
+
+                <h3>Christ University</h3>
+
+                <p>
+                    <b>Location:</b> Bengaluru
+                </p>
+
+                <a href="christ.html" class="details-btn">
+                    View Details
+                </a>
+
+            </div>
+
+
+            <!-- University of Mysore -->
+            <div class="college-card">
+
+                <div class="college-icon">🎓</div>
+
+                <h3>University of Mysore</h3>
+
+                <p>
+                    <b>Location:</b> Mysuru
+                </p>
+
+                <a href="mysore.html" class="details-btn">
+                    View Details
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 College Finder | All Rights Reserved</p>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script>
+
+        function searchCollege() {
+
+            let input = document.getElementById("search");
+
+            let filter = input.value.toLowerCase();
+
+            let cards = document.getElementsByClassName("college-card");
+
+            for (let i = 0; i < cards.length; i++) {
+
+                let name = cards[i]
+                    .getElementsByTagName("h3")[0]
+                    .innerText
+                    .toLowerCase();
+
+                if (name.includes(filter)) {
+
+                    cards[i].style.display = "";
+
+                } else {
+
+                    cards[i].style.display = "none";
+
+                }
+            }
+        }
+
+    </script>
+
+</body>
+</html>
